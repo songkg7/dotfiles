@@ -121,7 +121,7 @@ prompt_context() {
   fi
 }
 
-source $(brew --prefix zsh-syntax-highlighting)/zsh-syntax-highlighting.zsh
+source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 export NVM_DIR="$HOME/.nvm"
 
