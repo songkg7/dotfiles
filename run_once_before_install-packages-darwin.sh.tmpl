@@ -1,9 +1,61 @@
 {{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
-brew bundle --no-lock --file=/dev/stdin <<EOF
-brew "git"
-cask "google-chrome"
-EOF
-{{ end -}}
 
+PACKAGES=(
+    asdf
+    chezmoi
+    difftastic
+    fzf
+    gh
+    glab
+    htop
+    httpie
+    neovim
+    nmap
+    starship
+    zsh-syntax-highlighting
+    daipeihust/tap/im-select
+)
+
+CASKS=(
+    alt-tab
+    clipy
+    docker
+    hammerspoon
+    hiddenbar
+    karabiner-elements
+    obsidian
+    slack
+    stats
+    visual-studio-code
+    warp
+    wireshark
+    google-chrome
+)
+
+# If Homebrew is not installed on the system, it will be installed here
+if test ! $(which brew); then
+   printf '\n\n\e[33mHomebrew not found. \e[0mInstalling Homebrew...'
+   /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+else
+  printf '\n\n\e[0mHomebrew found. Continuing...'
+fi
+
+# Update homebrew packages
+printf '\nInitiating Homebrew update...\n'
+brew update
+
+printf '\nInstalling packages...\n'
+brew install ${PACKAGES[@]}
+
+printf '\n\nRemoving out of date packages...\n'
+brew cleanup
+
+printf '\n\nInstalling cask...\n'
+brew install cask
+
+printf '\n\nInstalling cask apps...\n'
+brew install --cask ${CASKS[@]}
+
+{{ end -}}
