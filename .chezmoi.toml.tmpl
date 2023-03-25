@@ -1,2 +1,10 @@
 [gpg]
     args = ["--quiet"]
+[git]
+    autocommit=true
+[edit]
+    command="nvim"
+[merge]
+    command = "nvim"
+    args = ["-d", "{{ .Destination }}", "{{ .Source }}", "{{ .Target }}"]
+
