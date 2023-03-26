@@ -18,8 +18,20 @@
     exact = true
     stripComponents = 1
 
+[".oh-my-zsh/custom/plugins/zsh-autosuggestions"]
+    type = "archive"
+    url = "https://github.com/zsh-users/zsh-autosuggestions/archive/master.tar.gz"
+    exact = true
+    stripComponents = 1
+    refreshPeriod = "168h"
+
 [".config/nvim"]
     type = "git-repo"
     url = "https://github.com/songkg7/nvim.git"
     refreshPeriod = "168h"
+
+[".local/share/nvim/site/pack/packer/start/packer.nvim"]
+    type = "archive"
+    url = "https://github.com/wbthomason/packer.nvim/archive/master.tar.gz"
+    refreshPeriod="168h"
 

@@ -1,0 +1,4 @@
+let $LANG = 'en'
+set termguicolors
+map <C-C> :noh <CR>
+
