@@ -5,7 +5,7 @@
 export ZSH="/Users/$USER/.oh-my-zsh"
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 export EDITOR=nvim
-export Author='haril'
+export Author='haril song'
 
 # ruby
 eval "$(rbenv init - zsh)"
