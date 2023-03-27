@@ -115,9 +115,8 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="nvim"
-alias ls="colorls --gs"
-alias ll="colorls -lA --sd --gs"
 alias kc="kubectl"
+alias ls="exa"
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
