@@ -35,3 +35,8 @@
     url = "https://github.com/wbthomason/packer.nvim/archive/master.tar.gz"
     refreshPeriod="168h"
 
+[".config/nvim/pack/github/start/copilot.vim"]
+    type = "git-repo"
+    url = "https://github.com/github/copilot.vim.git"
+    refreshPeriod = "168h"
+

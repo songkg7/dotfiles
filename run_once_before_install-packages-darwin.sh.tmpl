@@ -55,9 +55,6 @@ brew install ${PACKAGES[@]}
 printf '\n\nRemoving out of date packages...\n'
 brew cleanup
 
-printf '\n\nInstalling cask...\n'
-brew install cask
-
 printf '\n\nInstalling cask apps...\n'
 brew install --cask ${CASKS[@]}
 
