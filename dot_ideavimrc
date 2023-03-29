@@ -41,6 +41,8 @@ nnoremap <Tab>h :action SplitHorizontally<CR>
 nnoremap <Tab>m :action MoveEditorToOppositeTabGroup<CR>
 nmap q :q<CR>
 noremap <c-z> :action ToggleDistractionFreeMode<CR>
+noremap <Tab>pw :action PreviousWindow<CR>
+noremap <Tab>nw :action NextWindow<CR>
 
 "multi cursor
 map <C-N>  <A-N>
