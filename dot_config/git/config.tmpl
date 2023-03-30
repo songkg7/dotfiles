@@ -1,0 +1,26 @@
+[user]
+	name = {{ .name }}
+	email = {{ .email }}
+	signingkey = {{ .signingkey }}
+[core]
+	autocrlf = input
+	editor = nvim
+[alias]
+	st = status
+	a = "!git add $(git status -s | fzf -m | awk '{print $2}')"
+	unstage = reset HEAD --
+	bs = "!git switch $(git branch | fzf)"
+[init]
+	defaultBranch = main
+[commit]
+	gpgsign = true
+
+{{- $gpgPath := lookPath "gpg2" }}
+[gpg]
+	program = {{ $gpgPath }}
+[pull]
+	rebase = true
+[tag]
+	gpgSign = true
+[diff]
+	external = difft
