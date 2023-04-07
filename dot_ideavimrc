@@ -62,6 +62,7 @@ noremap <Leader>n :action NextWindow<CR>
 
 "select
 map <C-S> :action EditorSelectWord<CR>
+vnoremap if ]Mo[m^V
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "map <Tab>h <Action>(LocalHistory.ShowHistory)
