@@ -22,3 +22,10 @@
 [diff]
 	external = difft
 
+{{ if stat "/usr/local/bin/gpg" -}}
+[gpg]
+    program = /usr/local/bin/gpg
+{{ else if stat "/opt/homebrew/bin/gpg" -}}
+[gpg]
+    program = /opt/homebrew/bin/gpg
+{{ end -}}
