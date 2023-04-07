@@ -12,7 +12,7 @@ eval "$(rbenv init - zsh)"
 
 export M2_HOME=$HOME/apache-maven-3.8.2
 export PATH=$PATH:$M2_HOME/bin
-export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border'
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
