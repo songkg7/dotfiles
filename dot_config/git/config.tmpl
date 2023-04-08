@@ -22,10 +22,11 @@
 [diff]
 	external = difft
 
-{{ if stat "/usr/local/bin/gpg" -}}
-[gpg]
-    program = /usr/local/bin/gpg
-{{ else if stat "/opt/homebrew/bin/gpg" -}}
+{{ if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) -}}
 [gpg]
     program = /opt/homebrew/bin/gpg
+{{ else if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "amd64")) -}}
+[gpg]
+    program = /usr/local/bin/gpg
 {{ end -}}
+
