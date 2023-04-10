@@ -2,31 +2,36 @@
 	name = {{ .name }}
 	email = {{ .email }}
 	signingkey = {{ .signingkey }}
+
 [core]
 	autocrlf = input
 	editor = nvim
+
 [alias]
 	st = status
 	a = "!git add $(git status -s | fzf -m | awk '{print $2}')"
 	unstage = reset HEAD --
 	bs = "!git switch $(git branch | fzf)"
+
 [init]
 	defaultBranch = main
+
 [commit]
 	gpgsign = true
 
 [pull]
 	rebase = true
+
 [tag]
 	gpgSign = true
+
 [diff]
 	external = difft
 
-{{ if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) -}}
 [gpg]
-    program = /opt/homebrew/bin/gpg
-{{ else if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "amd64")) -}}
-[gpg]
-    program = /usr/local/bin/gpg
-{{ end -}}
+    format = ssh
+
+[gpg "ssh"]
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+    allowedSignersFile = {{ .chezmoi.homeDir }}/.config/git/allowed_signers
 
