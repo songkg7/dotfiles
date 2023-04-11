@@ -143,3 +143,4 @@ if [ -f "$HOME/google-cloud-sdk/completion.zsh.inc" ]; then . "$HOME/google-clou
 
 . $(brew --prefix asdf)/libexec/asdf.sh
 
+source $HOME/.config/op/plugins.sh
