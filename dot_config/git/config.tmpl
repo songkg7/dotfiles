@@ -1,7 +1,12 @@
 [user]
-	name = {{ .name }}
-	email = {{ .email }}
-	signingkey = {{ .signingkey }}
+	signingkey = {{ onepasswordRead "op://Personal/haril ssh key/public key" -}}
+{{ if eq .mode "work" }}
+	name = {{ onepasswordRead "op://work/Git Config/name" }}
+	email = {{ onepasswordRead "op://work/Git Config/email" }}
+{{ else if eq .mode "private" }}
+	name = {{ onepasswordRead "op://Personal/Git Config/name" }}
+	email = {{ onepasswordRead "op://Personal/Git Config/email" }}
+{{ end -}}
 
 [core]
 	autocrlf = input
