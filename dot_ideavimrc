@@ -36,8 +36,7 @@ nmap <Tab>vh <Action>(Vcs.ShowTabbedFileHistory)
 "window navigation
 nmap <Tab>hw <Action>(HideAllWindows)
 nmap <Tab>dw <Action>(HideAllWindows)<Action>(ActivateProjectToolWindow)<CR>
-nnoremap <Tab>v :action SplitVertically<CR>
-nnoremap <Tab>h :action SplitHorizontally<CR>
+map <Tab>r :action MoveTabRight<CR>
 nnoremap <Tab>m :action MoveEditorToOppositeTabGroup<CR>
 "nmap q :q<CR>
 noremap <c-z> :action ToggleDistractionFreeMode<CR>
