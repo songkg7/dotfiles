@@ -21,6 +21,7 @@ PACKAGES=(
     highlight
     pinentry-mac
     lazygit
+    font-hack-nerd-font
 )
 
 CASKS=(
@@ -56,6 +57,7 @@ fi
 # Update homebrew packages
 printf '\nInitiating Homebrew update...\n'
 brew update
+brew tab homebrew/cask-fonts
 
 printf '\nInstalling packages...\n'
 brew install ${PACKAGES[@]}
