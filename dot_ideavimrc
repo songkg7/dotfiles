@@ -57,7 +57,6 @@ nmap <Leader>k <Plug>(easymotion-k)
 nmap <Leader>h <Plug>(easymotion-linebackward)
 nmap <Leader>a <Plug>(easymotion-jumptoanywhere)
 noremap <Leader>e :action EditSourceInNewWindow<CR>
-noremap <Leader>n :action NextWindow<CR>
 
 "select
 map <C-S> :action EditorSelectWord<CR>
