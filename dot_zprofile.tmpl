@@ -7,7 +7,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 fpath+=("$(/usr/local/bin/brew --prefix)/share/zsh/site-functions")
 eval "$(/usr/local/bin/brew shellenv)"
 {{ end -}}
-
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/zprofile.post.zsh" ]] && builtin source "$HOME/.fig/shell/zprofile.post.zsh"
 
