@@ -7,6 +7,7 @@ format = """$all"""
 
 # Wait 10 milliseconds for starship to check files under the current directory.
 scan_timeout = 10000
+command_timeout = 5000
 
 # Disable the blank line at the start of the prompt
 add_newline = false
