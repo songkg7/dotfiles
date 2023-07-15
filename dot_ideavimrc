@@ -62,6 +62,9 @@ noremap <Leader>e :action EditSourceInNewWindow<CR>
 map <C-S> :action EditorSelectWord<CR>
 vnoremap if ]Mo[m^V
 
+"refactoring
+map <Leader>r :action RenameElement<CR>
+
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "map <Tab>h <Action>(LocalHistory.ShowHistory)
 
@@ -71,7 +74,7 @@ vnoremap if ]Mo[m^V
 "" Map <leader>d to start debug
 map <leader>d <Action>(Debug)
 map <leader>td <Action>(DebugClass)
-map <leader>r <Action>(Run)
+map <leader><leader>r <Action>(Run)
 map <leader>tr <Action>(RunClass)
 
 "" Map \b to toggle the breakpoint on the current line
