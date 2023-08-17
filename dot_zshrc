@@ -122,6 +122,7 @@ alias vi="nvim"
 alias kc="kubectl"
 alias ls="exa"
 alias lg="lazygit"
+alias cat='bat --paging=never'
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
