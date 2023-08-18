@@ -13,6 +13,6 @@ chezmoi init songkg7
 ```toml
 # ~/.config/chezmoi/chezmoi.toml
 [data]
-    mode = "private" or "work"
+    mode = "private" # or "work"
 ```
 
