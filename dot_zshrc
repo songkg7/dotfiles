@@ -124,6 +124,7 @@ alias kc="kubectl"
 alias ls="exa"
 alias lg="lazygit"
 alias cat='bat --paging=never'
+alias ch="chezmoi"
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
