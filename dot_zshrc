@@ -108,6 +108,16 @@ export LANG=en_US.UTF-8
 #   export EDITOR='mvim'
 # fi
 
+# walk
+function lk {
+  cd "$(walk "$@")"
+}
+
+# search and change directory
+function sd {
+  cd "$(fd . --type d | fzf)"
+}
+
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -125,7 +135,6 @@ alias ls="exa"
 alias lg="lazygit"
 alias cat='bat --paging=never'
 alias ch="chezmoi"
-alias sd="cd \"\$(fd . --type d | fzf)\""
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
