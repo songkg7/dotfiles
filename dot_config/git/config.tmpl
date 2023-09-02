@@ -30,9 +30,6 @@
 [tag]
 	gpgSign = true
 
-[diff]
-	external = difft
-
 [gpg]
     format = ssh
 
@@ -45,3 +42,23 @@
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+
+    [pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[delta]
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = Monokai Extended
+    navigate = true
+    side-by-side = true
+
+[interactive]
+    diffFilter = delta --color-only
+
+[merge]
+    conflictstyle = diff3
+
