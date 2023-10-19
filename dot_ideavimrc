@@ -58,6 +58,12 @@ nmap <Leader>h <Plug>(easymotion-linebackward)
 nmap <Leader>a <Plug>(easymotion-jumptoanywhere)
 noremap <Leader>e :action EditSourceInNewWindow<CR>
 
+"Acejump target mode
+map f <Action>(AceAction)
+map F <Action>(AceTargetAction)
+nmap S <Action>(AceBackwardAction)
+nmap s <Action>(AceForwardAction)
+
 "select
 map <C-S> :action EditorSelectWord<CR>
 vnoremap if ]Mo[m^V
