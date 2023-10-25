@@ -21,9 +21,7 @@ PACKAGES=(
     highlight
     pinentry-mac
     lazygit
-    font-hack-nerd-font
     git-number
-    fig
     atuin
     bat
     git-delta
@@ -53,6 +51,8 @@ CASKS=(
     dropbox
     shottr
     httpie
+    font-hack-nerd-font
+    fig
 )
 
 # If Homebrew is not installed on the system, it will be installed here
@@ -69,12 +69,12 @@ brew update
 brew tap homebrew/cask-fonts
 
 printf '\nInstalling packages...\n'
-brew install ${PACKAGES[@]}
+brew list ${PACKAGES[@]} || brew install ${PACKAGES[@]}
 
 printf '\n\nRemoving out of date packages...\n'
 brew cleanup
 
 printf '\n\nInstalling cask apps...\n'
-brew install --cask ${CASKS[@]}
+brew list ${CASKS[@]} || brew install --cask ${CASKS[@]}
 
 {{ end -}}
