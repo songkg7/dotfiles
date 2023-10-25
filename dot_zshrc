@@ -110,7 +110,7 @@ export LANG=en_US.UTF-8
 
 # walk
 function lk {
-  cd "$(walk "$@")"
+  cd "$(walk --icons "$@")"
 }
 
 # search and change directory
