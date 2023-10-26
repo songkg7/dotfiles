@@ -61,8 +61,6 @@ noremap <Leader>e :action EditSourceInNewWindow<CR>
 "Acejump target mode
 map f <Action>(AceAction)
 map F <Action>(AceTargetAction)
-nmap S <Action>(AceBackwardAction)
-nmap s <Action>(AceForwardAction)
 
 "select
 map <C-S> :action EditorSelectWord<CR>
