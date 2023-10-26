@@ -1,17 +1,9 @@
 {{ if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) -}}
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zprofile.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zprofile.pre.zsh"
 fpath+=("$(brew --prefix)/share/zsh/site-functions")
 eval "$(/opt/homebrew/bin/brew shellenv)"
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zprofile.post.zsh" ]] && builtin source "$HOME/.fig/shell/zprofile.post.zsh"
 {{ else if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "amd64")) -}}
-# Fig pre block. Keep at the top of this file.
-[[ -f "$HOME/.fig/shell/zprofile.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zprofile.pre.zsh"
-fpath+=("$/usr/local/share/zsh/site-functions")
+fpath+=("$(brew --prefix)/share/zsh/site-functions")
 eval "$(/usr/local/bin/brew shellenv)"
-# Fig post block. Keep at the bottom of this file.
-[[ -f "$HOME/.fig/shell/zprofile.post.zsh" ]] && builtin source "$HOME/.fig/shell/zprofile.post.zsh"
 {{ end -}}
 
 # Added by OrbStack: command-line tools and integration
