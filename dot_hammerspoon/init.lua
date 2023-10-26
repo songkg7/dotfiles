@@ -2,7 +2,7 @@
 -- Convert input soruce as English and sends 'escape' if inputSource is not English.
 -- Sends 'escape' if inputSource is English.
 -- key bindding reference --> https://www.hammerspoon.org/docs/hs.hotkey.html
-require('focus')
+-- require('focus')
 -- require('modules.inputsource_aurora')
 
 local inputEnglish = "com.apple.keylayout.ABC"
