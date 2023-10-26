@@ -17,9 +17,10 @@
     args = ["-d", "{{`{{ .Destination }}`}}", "{{`{{ .Source }}", "{{ .Target }}`}}"]
 
 [diff]
-    command = "delta"
-    pager = "delta"
-    args = ["{{ "{{" }} .Destination {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
+    pager = "delta --side-by-side"
+#   command = "delta"
+#   pager = "delta"
+#    args = ["{{ "{{" }} .Destination {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
 
 [data]
     mode = "{{ $mode }}"

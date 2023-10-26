@@ -16,7 +16,7 @@ PACKAGES=(
     neovim
     nmap
     starship
-    daipeihust/tap/im-select
+    im-select
     highlight
     lazygit
     git-number
@@ -50,8 +50,8 @@ CASKS=(
     shottr
     httpie
     font-hack-nerd-font
-    fig
     discord
+    iterm2
 )
 
 # If Homebrew is not installed on the system, it will be installed here
@@ -66,6 +66,7 @@ fi
 printf '\nInitiating Homebrew update...\n'
 brew update
 brew tap homebrew/cask-fonts
+brew tap daipeihust/tap
 
 printf '\nInstalling packages...\n'
 brew list --formula ${PACKAGES[@]} || brew install ${PACKAGES[@]}
