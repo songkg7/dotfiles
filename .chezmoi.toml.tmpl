@@ -1,3 +1,8 @@
+{{ $choices := list "private" "work" -}}
+{{ $mode := promptChoiceOnce . "private" "What is your data mode" $choices -}}
+{{ $email := promptStringOnce . "email" "What is your email address" "songkg7@gmail.com" -}}
+{{ $name := promptStringOnce . "name" "What is your name or nickname" "haril" -}}
+
 [gpg]
     args = ["--quiet"]
 
@@ -12,5 +17,12 @@
     args = ["-d", "{{`{{ .Destination }}`}}", "{{`{{ .Source }}", "{{ .Target }}`}}"]
 
 [diff]
-    pager = "delta --side-by-side"
+    command = "delta"
+    pager = "delta"
+    args = ["{{ "{{" }} .Destination {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
+
+[data]
+    mode = "{{ $mode }}"
+    email = "{{ $email }}"
+    name = "{{ $name }}"
 
