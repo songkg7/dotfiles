@@ -19,7 +19,6 @@ PACKAGES=(
     starship
     daipeihust/tap/im-select
     highlight
-    pinentry-mac
     lazygit
     git-number
     atuin
@@ -53,7 +52,6 @@ CASKS=(
     httpie
     font-hack-nerd-font
     fig
-    gpg-suite
     discord
 )
 
@@ -71,12 +69,12 @@ brew update
 brew tap homebrew/cask-fonts
 
 printf '\nInstalling packages...\n'
-brew list ${PACKAGES[@]} || brew install ${PACKAGES[@]}
+brew list --formula ${PACKAGES[@]} || brew install ${PACKAGES[@]}
 
 printf '\n\nRemoving out of date packages...\n'
 brew cleanup
 
 printf '\n\nInstalling cask apps...\n'
-brew list ${CASKS[@]} || brew install --cask ${CASKS[@]}
+brew list --cask ${CASKS[@]} || brew install --cask ${CASKS[@]}
 
 {{ end -}}
