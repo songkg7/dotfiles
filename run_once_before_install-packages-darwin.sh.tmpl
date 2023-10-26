@@ -28,6 +28,7 @@ PACKAGES=(
     gping
     walk
     orbstack
+    tldr
 )
 
 CASKS=(
@@ -61,6 +62,9 @@ if test ! $(which brew); then
 else
   printf '\n\n\e[0mHomebrew found. Continuing...'
 fi
+
+# If Oh-my-zsh is not installed on the system, it will be installed here
+# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Update homebrew packages
 printf '\nInitiating Homebrew update...\n'
