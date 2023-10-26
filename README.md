@@ -10,9 +10,3 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply songkg7
 chezmoi init songkg7
 ```
 
-```toml
-# ~/.config/chezmoi/chezmoi.toml
-[data]
-    mode = "private" # or "work"
-```
-
