@@ -29,6 +29,8 @@ PACKAGES=(
     walk
     orbstack
     tldr
+    awscli
+    mas
 )
 
 CASKS=(
@@ -80,5 +82,8 @@ brew cleanup
 
 printf '\n\nInstalling cask apps...\n'
 brew list --cask ${CASKS[@]} || brew install --cask ${CASKS[@]}
+
+# amphetamine
+mas install 937984704
 
 {{ end -}}
