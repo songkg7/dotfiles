@@ -1,5 +1,7 @@
 # dotfiles
 
+## Init
+
 ```bash
 # Install chezmoi and dotfiles from github, empty machine with a single command
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply songkg7
@@ -9,4 +11,14 @@ sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply songkg7
 # already installed chezmoi
 chezmoi init songkg7
 ```
+
+## Action Required Manually
+
+### Install
+
+- adguard
+- homerow
+- amphetamine
+- kakaotalk
+- oh-my-zsh(wip)
 
