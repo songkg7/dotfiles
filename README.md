@@ -21,4 +21,6 @@ chezmoi init songkg7
 - amphetamine
 - kakaotalk
 - oh-my-zsh(wip)
+- rectangle(trial before managed by chezmoi)
+- copilot for nvim
 
