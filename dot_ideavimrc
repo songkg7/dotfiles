@@ -68,6 +68,7 @@ vnoremap if ]Mo[m^V
 
 "refactoring
 map <Leader>r :action RenameElement<CR>
+nmap gn <Action>(Inline)
 
 "" -- Map IDE actions to IdeaVim -- https://jb.gg/abva4t
 "map <Tab>h <Action>(LocalHistory.ShowHistory)
