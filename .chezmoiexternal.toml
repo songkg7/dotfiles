@@ -36,9 +36,9 @@
     refreshPeriod="168h"
 
 [".config/nvim/pack/github/start/copilot.vim"]
-    type = "archive"
-    url = "https://github.com/github/copilot.vim/archive/master.tar.gz"
-    exact = true
-    stripComponents = 1
+    type = "git-repo"
+    url = "https://github.com/github/copilot.vim"
     refreshPeriod = "168h"
+    clone.args = ["--depth", "1"]
+    pull.args = ["--ff-only"]
 
