@@ -1,8 +1,8 @@
 {{ if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) -}}
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
+fpath+=("/opt/homebrew/bin/share/zsh/site-functions")
 eval "$(/opt/homebrew/bin/brew shellenv)"
 {{ else if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "amd64")) -}}
-fpath+=("$(brew --prefix)/share/zsh/site-functions")
+fpath+=("/usr/local/share/zsh/site-functions")
 eval "$(/usr/local/bin/brew shellenv)"
 {{ end -}}
 
