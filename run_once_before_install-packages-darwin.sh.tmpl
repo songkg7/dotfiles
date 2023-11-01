@@ -1,7 +1,6 @@
 {{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
-
 PACKAGES=(
     asdf
     exa
@@ -33,6 +32,7 @@ PACKAGES=(
     mas
     ripgrep
     fx
+    rectangle
 )
 
 CASKS=(
@@ -57,6 +57,7 @@ CASKS=(
     font-hack-nerd-font
     discord
     iterm2
+    gureumkim
 )
 
 # If Homebrew is not installed on the system, it will be installed here
