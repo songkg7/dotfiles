@@ -6,7 +6,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 export USE_GKE_GCLOUD_AUTH_PLUGIN=True
-export EDITOR=nvim
+export EDITOR=lvim
 export AUTHOR='haril song'
 
 # ruby
@@ -129,7 +129,7 @@ function sd {
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vi="nvim"
+alias vi="lvim"
 alias kc="kubectl"
 alias ls="exa"
 alias lg="lazygit"
