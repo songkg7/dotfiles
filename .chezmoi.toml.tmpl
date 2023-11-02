@@ -4,26 +4,26 @@
 {{ $name := promptStringOnce . "name" "What is your name or nickname" "haril" -}}
 
 [gpg]
-    args = ["--quiet"]
+args = ["--quiet"]
 
 [git]
-    autocommit = true
+autocommit = true
 
 [edit]
-    command = "lvim"
+command = "lvim"
 
 [merge]
-    command = "lvim"
-    args = ["-d", "{{`{{ .Destination }}`}}", "{{`{{ .Source }}", "{{ .Target }}`}}"]
+command = "lvim"
+args = ["-d", "{{`{{ .Destination }}`}}", "{{`{{ .Source }}", "{{ .Target }}`}}"]
 
 [diff]
-    pager = "delta --side-by-side"
-#   command = "delta"
-#   pager = "delta"
-#    args = ["{{ "{{" }} .Destination {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
+pager = "delta --side-by-side"
+#command = "delta"
+#pager = "delta"
+#args = ["{{ "{{" }} .Destination {{ "}}" }}", "{{ "{{" }} .Target {{ "}}" }}"]
 
 [data]
-    mode = "{{ $mode }}"
-    email = "{{ $email }}"
-    name = "{{ $name }}"
+mode = "{{ $mode }}"
+email = "{{ $email }}"
+name = "{{ $name }}"
 
