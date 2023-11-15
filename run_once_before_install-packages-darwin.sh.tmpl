@@ -74,18 +74,18 @@ fi
 
 # Update homebrew packages
 printf '\nInitiating Homebrew update...\n'
-brew update
 brew tap homebrew/cask-fonts
 brew tap daipeihust/tap
+brew update
 
 printf '\nInstalling packages...\n'
 brew list --formula ${PACKAGES[@]} || brew install ${PACKAGES[@]}
 
-printf '\n\nRemoving out of date packages...\n'
-brew cleanup
-
 printf '\n\nInstalling cask apps...\n'
 brew list --cask ${CASKS[@]} || brew install --cask ${CASKS[@]}
+
+printf '\n\nRemoving out of date packages...\n'
+brew cleanup
 
 # amphetamine
 mas install 937984704
