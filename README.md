@@ -19,6 +19,5 @@ chezmoi init songkg7
 - adguard
 - homerow
 - oh-my-zsh(wip)
-- rectangle(trial before managed by chezmoi)
 - copilot for nvim
 
