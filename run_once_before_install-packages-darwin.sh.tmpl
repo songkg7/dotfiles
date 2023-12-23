@@ -79,11 +79,11 @@ fi
 # If Oh-my-zsh is not installed on the system, it will be installed here
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Update homebrew packages
+# Update homebrew packages and apps
 printf '\nInitiating Homebrew update...\n'
 brew tap homebrew/cask-fonts
 brew tap daipeihust/tap
-brew update
+brew update && brew upgrade --greedy
 
 printf '\nInstalling packages...\n'
 brew list --formula ${PACKAGES[@]} || brew install ${PACKAGES[@]}
