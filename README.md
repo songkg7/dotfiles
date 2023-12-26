@@ -18,6 +18,5 @@ chezmoi init songkg7
 
 - adguard
 - homerow
-- oh-my-zsh(wip)
 - copilot for nvim
 
