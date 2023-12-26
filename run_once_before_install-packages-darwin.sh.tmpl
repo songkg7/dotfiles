@@ -77,7 +77,12 @@ else
 fi
 
 # If Oh-my-zsh is not installed on the system, it will be installed here
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+if [ ! -d $HOME/.oh-my-zsh ]; then
+  printf '\n\n\e[33mOh-my-zsh not found. \e[0mInstalling Oh-my-zsh...'
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+else
+  printf '\n\n\e[0mOh-my-zsh found. Continuing...'
+fi
 
 # Update homebrew packages and apps
 printf '\nInitiating Homebrew update...\n'
