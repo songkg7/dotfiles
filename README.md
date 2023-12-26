@@ -16,7 +16,8 @@ chezmoi init songkg7
 
 ### Install
 
-- adguard
-- homerow
-- copilot for nvim
+- [adguard](https://adguard.com/ko/adguard-mac/overview.html)
+- [homerow](https://www.homerow.app/)
+- [Rize](https://rize.io/)
+- copilot for nvim(wip)
 
