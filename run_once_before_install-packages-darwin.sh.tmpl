@@ -1,73 +1,9 @@
 {{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
-PACKAGES=(
-    asdf
-    eza
-    ranger
-    chezmoi
-    fzf
-    fd
-    gh
-    glab
-    htop
-    httpie
-    neovim
-    nmap
-    starship
-    im-select
-    highlight
-    lazygit
-    git-number
-    atuin
-    bat
-    git-delta
-    duf
-    dust
-    gping
-    walk
-    tldr
-    awscli
-    mas
-    ripgrep
-    fx
-    m-cli
-)
-
-CASKS=(
-    1password
-    1password-cli
-    arc
-    alt-tab
-    raycast
-    hammerspoon
-    hiddenbar
-    karabiner-elements
-    obsidian
-    notion
-    slack
-    stats
-    visual-studio-code
-    warp
-    itsycal
-    dropbox
-    shottr
-    httpie
-    font-d2coding-nerd-font
-    font-hack-nerd-font
-    font-monaspace
-    font-monaspace-nerd-font
-    font-rubik
-    font-nanum-gothic
-    font-noto-sans-kr
-    discord
-    iterm2
-    orbstack
-    gureumkim
-    rectangle
-    kap
-    figma
-)
+WORKING_TREE={{- .chezmoi.workingTree }}
+PACKAGES=`cat $WORKING_TREE/formula`
+CASKS=`cat $WORKING_TREE/cask`
 
 # If Homebrew is not installed on the system, it will be installed here
 if test ! $(which brew); then
@@ -106,4 +42,4 @@ mas install 937984704
 # kakaotalk
 mas install 869223134
 
-{{ end -}}
+{{- end -}}
