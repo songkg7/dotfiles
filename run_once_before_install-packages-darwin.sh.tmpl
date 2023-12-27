@@ -2,8 +2,8 @@
 #!/bin/bash
 
 WORKING_TREE={{- .chezmoi.workingTree }}
-PACKAGES=`cat $WORKING_TREE/formula`
-CASKS=`cat $WORKING_TREE/cask`
+PACKAGES=`cat $WORKING_TREE/packages/formula`
+CASKS=`cat $WORKING_TREE/packages/cask`
 
 # If Homebrew is not installed on the system, it will be installed here
 if test ! $(which brew); then
