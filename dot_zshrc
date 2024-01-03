@@ -10,6 +10,8 @@ export AUTHOR='haril song'
 # ruby
 eval "$(rbenv init - zsh)"
 
+eval "$(zoxide init zsh)"
+
 # direnv
 eval "$(direnv hook zsh)"
 
