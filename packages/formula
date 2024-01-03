@@ -3,6 +3,7 @@ atuin
 awscli
 bat
 chezmoi
+direnv
 duf
 dust
 eza
