@@ -2,6 +2,7 @@ asdf
 atuin
 awscli
 bat
+bottom
 chezmoi
 direnv
 duf
@@ -30,4 +31,3 @@ starship
 tldr
 walk
 zoxide
-
