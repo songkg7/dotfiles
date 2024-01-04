@@ -3,18 +3,13 @@
 
 WORKING_TREE={{- .chezmoi.workingTree }}
 PACKAGES=`cat $WORKING_TREE/packages/formula`
-CASKS=`cat $WORKING_TREE/packages/cask`
 
 # formula hash: {{ include "packages/formula" | sha256sum }}
-# cask hash: {{ include "packages/cask" | sha256sum }}
 
-brew update && brew upgrade --greedy
+brew update && brew upgrade
 
 printf '\nInstalling packages...\n'
 brew list --formula ${PACKAGES[@]} || brew install ${PACKAGES[@]}
-
-printf '\n\nInstalling cask apps...\n'
-brew list --cask ${CASKS[@]} || brew install --cask ${CASKS[@]}
 
 printf '\n\nRemoving out of date packages...\n'
 brew cleanup
