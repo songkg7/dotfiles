@@ -132,7 +132,8 @@ function sd {
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias vi="lvim"
 alias kc="kubectl"
-alias ls="eza --icons"
+alias ls="lsd"
+alias lt="ls --tree"
 alias lg="lazygit"
 alias cat='bat --paging=never'
 alias ch="chezmoi"
