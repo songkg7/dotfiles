@@ -19,5 +19,13 @@ chezmoi init songkg7
 - [adguard](https://adguard.com/ko/adguard-mac/overview.html)
 - [homerow](https://www.homerow.app/)
 - [Rize](https://rize.io/)
-- copilot for nvim(wip)
+
+### Start Services
+
+System Permission Required
+
+```bash
+skhd --start-service
+yabai --start-service
+```
 
