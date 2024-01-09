@@ -34,11 +34,12 @@ shift + alt - b : yabai -m space --balance
 
 # Moving Windows Around
 
-# swap window
-shift + alt - j : yabai -m window --swap south
-shift + alt - k : yabai -m window --swap north
-shift + alt - h : yabai -m window --swap west
-shift + alt - l : yabai -m window --swap east
+# swap windo### Swap/move window
+#   (options: north, east, south, west)
+shift + alt - h : yabai -m window --swap west  || $(yabai -m window --display west; yabai -m display --focus west)
+shift + alt - j : yabai -m window --swap south || $(yabai -m window --display south; yabai -m display --focus south)
+shift + alt - k : yabai -m window --swap north || $(yabai -m window --display north; yabai -m display --focus north)
+shift + alt - l : yabai -m window --swap east  || $(yabai -m window --display east; yabai -m display --focus east)
 
 # move window and split
 ctrl + alt - j : yabai -m window --warp south
