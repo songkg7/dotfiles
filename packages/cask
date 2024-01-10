@@ -2,6 +2,7 @@
 1password-cli
 alt-tab
 arc
+clop
 discord
 dropbox
 figma
@@ -14,6 +15,7 @@ font-noto-sans-kr
 font-rubik
 gureumkim
 hammerspoon
+heynote
 hiddenbar
 httpie
 iterm2
@@ -24,11 +26,9 @@ notion
 obsidian
 orbstack
 raycast
+rectangle
 shottr
 slack
 stats
 visual-studio-code
 warp
-heynote
-clop
-rectangle
