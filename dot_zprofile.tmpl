@@ -1,10 +1,15 @@
 {{ if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "arm64")) -}}
 fpath+=("/opt/homebrew/bin/share/zsh/site-functions")
 eval "$(/opt/homebrew/bin/brew shellenv)"
-{{ else if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "amd64")) -}}
-fpath+=("/usr/local/share/zsh/site-functions")
-eval "$(/usr/local/bin/brew shellenv)"
-{{ end -}}
-
 # Added by OrbStack: command-line tools and integration
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+{{ else if (and (eq .chezmoi.os "darwin") (eq .chezmoi.arch "amd64")) -}}
+# Fig pre block. Keep at the top of this file.
+[[ -f "$HOME/.fig/shell/zprofile.pre.zsh" ]] && builtin source "$HOME/.fig/shell/zprofile.pre.zsh"
+fpath+=("/usr/local/share/zsh/site-functions")
+eval "$(/usr/local/bin/brew shellenv)"
+# Added by OrbStack: command-line tools and integration
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
+# Fig post block. Keep at the bottom of this file.
+[[ -f "$HOME/.fig/shell/zprofile.post.zsh" ]] && builtin source "$HOME/.fig/shell/zprofile.post.zsh"
+{{ end -}}

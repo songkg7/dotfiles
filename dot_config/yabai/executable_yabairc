@@ -28,3 +28,5 @@ yabai -m rule --add app="^Rize$" manage=off
 yabai -m rule --add app="^KakaoTalk$" manage=off
 yabai -m rule --add app="^Discord$" manage=off
 yabai -m rule --add app="^Slack$" manage=off
+yabai -m rule --add app="^DeepL$" manage=off
+yabai -m rule --add app="^Shottr$" manage=off
