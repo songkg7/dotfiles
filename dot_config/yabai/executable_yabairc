@@ -33,5 +33,5 @@ yabai -m rule --add app="^Shottr$" manage=off
 yabai -m rule --add app="^1Password$" manage=off
 yabai -m rule --add app="^Finder$" manage=off
 yabai -m rule --add app="^IntelliJ IDEA|DataGrip|PyCharm|WebStorm|CLion|GoLand|AppCode|RubyMine|PhpStorm|Rider|Android Studio$" manage=off
-yabai -m rule --add app="^Calendar$" manage=off
 yabai -m rule --add app="^Kap$" manage=off
+yabai -m rule --add app="^Calendar$" manage=off
