@@ -1,15 +1,12 @@
 {{- if eq .chezmoi.os "darwin" -}}
 #!/bin/bash
 
-WORKING_TREE={{- .chezmoi.workingTree }}
-PACKAGES=`cat $WORKING_TREE/packages/formula`
-
-# formula hash: {{ include "packages/formula" | sha256sum }}
+# formula hash: {{ .packages.darwin.formulae | join "" | sha256sum }}
 
 brew update && brew upgrade
 
 printf '\nInstalling packages...\n'
-brew list --formula ${PACKAGES[@]} || brew install ${PACKAGES[@]}
+brew list --formula {{ .packages.darwin.formulae | join " " }} || brew install {{ .packages.darwin.formulae | join " " }}
 
 printf '\n\nRemoving out of date packages...\n'
 brew cleanup
