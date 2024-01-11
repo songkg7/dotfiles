@@ -1,0 +1,11 @@
+managed:
+  host:
+    - worker
+    - jenkins-server
+    - office
+    - node01
+    - node02
+    - node03
+    - node06
+    - node07
+

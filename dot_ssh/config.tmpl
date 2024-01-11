@@ -3,38 +3,19 @@ Include ~/.orbstack/ssh/config
 Host *
 IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
 
-Host worker
-HostName {{ onepasswordRead "op://work/worker/url" }}
-User {{ onepasswordRead "op://work/worker/username" }}
+{{ $ids := .managed.host -}}
+{{- range $ids -}}
+Host {{ (onepassword .).title }}
+{{ range (onepassword .).fields -}}
+{{  if eq .label "URL" -}}
+HostName {{ .value }}
+{{  end -}}
+{{  if eq .label "username" -}}
+User {{ .value }}
 
-Host jenkins-server
-HostName {{ onepasswordRead "op://work/jenkins/url" }}
-User {{ onepasswordRead "op://work/jenkins/username" }}
-
-Host office
-HostName {{ onepasswordRead "op://work/office/url" }}
-User {{ onepasswordRead "op://work/office/username" }}
-
-Host node01
-HostName {{ onepasswordRead "op://work/node01/url" }}
-User {{ onepasswordRead "op://work/node01/username" }}
-
-Host node02
-HostName {{ onepasswordRead "op://work/node02/url" }}
-User {{ onepasswordRead "op://work/node02/username" }}
-
-Host node03
-HostName {{ onepasswordRead "op://work/node03/url" }}
-User {{ onepasswordRead "op://work/node03/username" }}
-
-Host node06
-HostName {{ onepasswordRead "op://work/node06/url" }}
-User {{ onepasswordRead "op://work/node06/username" }}
-
-Host node07
-HostName {{ onepasswordRead "op://work/node07/url" }}
-User {{ onepasswordRead "op://work/node07/username" }}
-
+{{  end -}}
+{{ end -}}
+{{ end -}}
 
 # Fig ssh integration. Keep at the bottom of this file.
 Match all
