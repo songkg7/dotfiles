@@ -7,9 +7,33 @@ Host worker
 HostName {{ onepasswordRead "op://work/worker/url" }}
 User {{ onepasswordRead "op://work/worker/username" }}
 
+Host jenkins
+HostName {{ onepasswordRead "op://work/jenkins/url" }}
+User {{ onepasswordRead "op://work/jenkins/username" }}
+
+Host office
+HostName {{ onepasswordRead "op://work/office/url" }}
+User {{ onepasswordRead "op://work/office/username" }}
+
 Host node01
 HostName {{ onepasswordRead "op://work/node01/url" }}
 User {{ onepasswordRead "op://work/node01/username" }}
+
+Host node02
+HostName {{ onepasswordRead "op://work/node02/url" }}
+User {{ onepasswordRead "op://work/node02/username" }}
+
+Host node03
+HostName {{ onepasswordRead "op://work/node03/url" }}
+User {{ onepasswordRead "op://work/node03/username" }}
+
+Host node06
+HostName {{ onepasswordRead "op://work/node06/url" }}
+User {{ onepasswordRead "op://work/node06/username" }}
+
+Host node07
+HostName {{ onepasswordRead "op://work/node07/url" }}
+User {{ onepasswordRead "op://work/node07/username" }}
 
 
 # Fig ssh integration. Keep at the bottom of this file.
