@@ -3,7 +3,6 @@ managed:
     - worker
     - jenkins-server
     - office
-    - node01
     - node02
     - node03
     - node06
