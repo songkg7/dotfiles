@@ -38,6 +38,7 @@ packages:
       - walk
       - yabai
       - zoxide
+      - trash-cli
     casks:
       - 1password
       - 1password-cli
