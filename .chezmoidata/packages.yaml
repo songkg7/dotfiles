@@ -72,6 +72,5 @@ packages:
       - rectangle
       - shottr
       - slack
-      - stats
       - visual-studio-code
       - warp
