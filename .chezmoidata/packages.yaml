@@ -66,6 +66,7 @@ packages:
       - kap
       - karabiner-elements
       - notion
+      - notion-calendar
       - obsidian
       - orbstack
       - raycast
