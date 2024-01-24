@@ -139,6 +139,9 @@ alias lt="ls --tree"
 alias lg="lazygit"
 alias cat='bat --paging=never'
 alias ch="chezmoi"
+alias rm="trash"
+alias rml="trash-list"
+alias rmc="trash-empty"
 
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
