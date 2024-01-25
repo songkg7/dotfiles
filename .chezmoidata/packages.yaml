@@ -75,3 +75,4 @@ packages:
       - slack
       - visual-studio-code
       - warp
+      - betterdisplay
