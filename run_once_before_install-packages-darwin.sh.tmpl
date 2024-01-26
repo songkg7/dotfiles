@@ -33,13 +33,7 @@ brew list --cask {{ .packages.darwin.casks | join " " }} || brew install --cask 
 printf '\n\nRemoving out of date packages...\n'
 brew cleanup
 
-# amphetamine
-mas install 937984704
-
-# kakaotalk
-mas install 869223134
-
-# RunCat
-mas install 1429033973
+printf '\n\nInstalling App Store apps...\n'
+mas list | awk '{print $1}' | xargs -I % mas install %
 
 {{- end -}}
