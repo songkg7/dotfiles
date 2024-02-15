@@ -3,7 +3,7 @@
 
 # cask hash: {{ .packages.darwin.casks | join "" | sha256sum }}
 
-brew update && brew upgrade --greedy
+brew update && brew upgrade {{ .packages.darwin.casks | join " " }}
 
 printf '\n\nInstalling cask apps...\n'
 brew list --cask {{ .packages.darwin.casks | join " " }} || brew install --cask {{ .packages.darwin.casks | join " " }}

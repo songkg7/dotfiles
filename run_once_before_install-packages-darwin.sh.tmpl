@@ -22,16 +22,6 @@ printf '\nInitiating Homebrew update...\n'
 brew tap homebrew/cask-fonts
 brew tap daipeihust/tap
 brew tap koekeishiya/formulae
-brew update && brew upgrade --greedy
-
-printf '\nInstalling packages...\n'
-brew list --formula {{ .packages.darwin.formulae | join " " }} || brew install {{ .packages.darwin.formulae | join " " }}
-
-printf '\n\nInstalling cask apps...\n'
-brew list --cask {{ .packages.darwin.casks | join " " }} || brew install --cask {{ .packages.darwin.casks | join " " }}
-
-printf '\n\nRemoving out of date packages...\n'
-brew cleanup
 
 printf '\n\nInstalling App Store apps...\n'
 mas list | awk '{print $1}' | xargs -I % mas install %
