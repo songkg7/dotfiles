@@ -76,3 +76,4 @@ packages:
       - visual-studio-code
       - warp
       - betterdisplay
+      - gitbutler
