@@ -39,6 +39,7 @@ packages:
       - yabai
       - zoxide
       - trash-cli
+      - procs
     casks:
       - 1password
       - 1password-cli
