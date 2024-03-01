@@ -40,6 +40,8 @@ packages:
       - zoxide
       - trash-cli
       - procs
+      - gum
+      - vhs
     casks:
       - 1password
       - 1password-cli
