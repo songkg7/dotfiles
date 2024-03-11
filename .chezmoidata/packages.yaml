@@ -42,6 +42,7 @@ packages:
       - procs
       - gum
       - vhs
+      - gifski
     casks:
       - 1password
       - 1password-cli
