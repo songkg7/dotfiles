@@ -43,6 +43,8 @@ packages:
       - gum
       - vhs
       - gifski
+      - jq
+      - vale
     casks:
       - 1password
       - 1password-cli
