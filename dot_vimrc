@@ -1,5 +1,12 @@
 let $LANG = 'en'
 set termguicolors
+
+nnoremap B ^
+nnoremap E $
+
+nnoremap & <nop>
+nnoremap ^ <nop>
+
 map <C-C> :noh <CR>
 autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"
 
