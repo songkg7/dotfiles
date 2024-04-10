@@ -44,7 +44,8 @@ packages:
       - vhs
       - gifski
       - jq
-      - vale
+      - termshark
+      - wtfutil
     casks:
       - 1password
       - 1password-cli
@@ -81,4 +82,3 @@ packages:
       - visual-studio-code
       - warp
       - betterdisplay
-      - gitbutler
