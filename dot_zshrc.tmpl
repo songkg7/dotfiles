@@ -147,14 +147,10 @@ prompt_context() {
   fi
 }
 
-# asdf
-. $(brew --prefix asdf)/libexec/asdf.sh
-
 source $HOME/.config/op/plugins.sh
 
 eval "$(atuin init zsh)"
-
 eval "$(starship init zsh)"
+eval "$(mise activate zsh)"
 
 figlet -f mike "Hello $(echo $AUTHOR | awk '{print $1}')" | lolcat
-

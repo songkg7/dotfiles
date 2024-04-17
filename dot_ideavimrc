@@ -78,7 +78,6 @@ nmap gn <Action>(Inline)
 
 "" Map <leader>d to start debug
 map <leader>d <Action>(Debug)
-map <leader>td <Action>(DebugClass)
 map <leader>r <Action>(Run)
 map <leader>tr <Action>(RunClass)
 
