@@ -1,7 +1,6 @@
 packages:
   darwin:
     formulae:
-      - asdf
       - atuin
       - awscli
       - bat
@@ -46,6 +45,7 @@ packages:
       - jq
       - termshark
       - wtfutil
+      - mise
     casks:
       - 1password
       - 1password-cli
