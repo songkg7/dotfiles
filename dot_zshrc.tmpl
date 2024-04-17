@@ -7,14 +7,6 @@ export USE_GKE_GCLOUD_AUTH_PLUGIN=True
 export EDITOR=lvim
 export AUTHOR='{{ .name }}'
 
-# ruby
-eval "$(rbenv init - zsh)"
-
-eval "$(zoxide init zsh)"
-
-# direnv
-eval "$(direnv hook zsh)"
-
 export PATH="$(brew --prefix)/anaconda3/bin:$PATH"
 # export FZF_DEFAULT_OPTS='--height 40% --layout=reverse'
 
@@ -85,7 +77,7 @@ DISABLE_AUTO_UPDATE="true"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-    asdf
+    mise
     git
     zsh-syntax-highlighting
     zsh-autosuggestions
@@ -152,5 +144,11 @@ source $HOME/.config/op/plugins.sh
 eval "$(atuin init zsh)"
 eval "$(starship init zsh)"
 eval "$(mise activate zsh)"
+eval "$(mise completion zsh)"
+# ruby
+eval "$(rbenv init - zsh)"
+eval "$(zoxide init zsh)"
+# direnv
+eval "$(direnv hook zsh)"
 
 figlet -f mike "Hello $(echo $AUTHOR | awk '{print $1}')" | lolcat
