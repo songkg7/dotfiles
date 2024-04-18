@@ -90,6 +90,9 @@ map <Tab>to <C-w>o<CR>:tabonly<CR>
 map <C-[> gT
 map <C-]> gt
 
+"" for Avoiding keymap conflicts
+map <D-;> :action ShowProjectStructureSettings<CR>
+
 " Find more examples here: https://jb.gg/share-ideavimrc
 set ideajoin
 set clipboard+=ideaput
