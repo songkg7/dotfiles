@@ -18,12 +18,6 @@ else
 fi
 
 # Update homebrew packages and apps
-printf '\nInitiating Homebrew update...\n'
-brew tap homebrew/cask-fonts
-brew tap daipeihust/tap
-brew tap koekeishiya/formulae
-
-printf '\n\nInstalling App Store apps...\n'
-mas list | awk '{print $1}' | xargs -I % mas install %
+brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/Brewfile
 
 {{- end -}}
