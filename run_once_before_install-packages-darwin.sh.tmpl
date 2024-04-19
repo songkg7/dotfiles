@@ -18,6 +18,7 @@ else
 fi
 
 # Update homebrew packages and apps
+printf '\n\n\e[33mUpdating Homebrew...\e[0m'
 brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/Brewfile
 
 {{- end -}}
