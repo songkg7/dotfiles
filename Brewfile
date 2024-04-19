@@ -126,7 +126,6 @@ cask "superlist"
 cask "visualvm"
 cask "warp"
 cask "wireshark"
-cask "zed"
 mas "Amphetamine", id: 937984704
 mas "Bandizip", id: 1265704574
 mas "Encrypto", id: 935235287
