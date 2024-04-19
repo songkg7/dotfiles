@@ -3,6 +3,11 @@
 {{ $email := promptStringOnce . "email" "What is your email address" "songkg7@gmail.com" -}}
 {{ $name := promptStringOnce . "name" "What is your name or nickname" "haril" -}}
 
+encryption = "age"
+[age]
+identity = "{{ .chezmoi.homeDir }}/Documents/dev/key/age-key.txt"
+recipient = "age1d5hy0nys2yzkt444z7r235hcw85n3tpspencz8htp5d6rh6eq5qqujgs43"
+
 [gpg]
 args = ["--quiet"]
 
