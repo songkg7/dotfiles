@@ -127,22 +127,9 @@ cask "visualvm"
 cask "warp"
 cask "wireshark"
 mas "Amphetamine", id: 937984704
-mas "Bandizip", id: 1265704574
-mas "Encrypto", id: 935235287
-mas "GarageBand", id: 682658836
-mas "Goodnotes", id: 1444383602
-mas "HP Smart", id: 1474276998
-mas "iMovie", id: 408981434
 mas "KakaoTalk", id: 869223134
-mas "Keynote", id: 409183694
-mas "Logic Pro", id: 634148309
-mas "Microsoft Remote Desktop", id: 1295203466
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Polyglot", id: 1471801525
 mas "RunCat", id: 1429033973
 mas "ScreenBrush", id: 1233965871
-mas "Shazam", id: 897118787
 mas "Spark Desktop", id: 6445813049
 mas "Vimari", id: 1480933944
 mas "WeatherBug", id: 1059074180
