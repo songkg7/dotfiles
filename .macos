@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Dock
+
+## dock size
+defaults write com.apple.dock "tilesize" -int "40"
+
+# Keyboard
+
+## Repeats the key as long as it is held down
+defaults write NSGlobalDomain "ApplePressAndHoldEnabled" -bool "false"
+
+## Key repeat rate
+defaults write NSGlobalDomain "KeyRepeat" -int "1"
+
+# Restart for changes to take effect
+killall Dock
+killall Finder
+killall SystemUIServer
+killall ControlCenter
