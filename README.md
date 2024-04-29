@@ -24,7 +24,6 @@ chezmoi init songkg7 --apply
 
 ### Install
 
-- [adguard](https://adguard.com/ko/adguard-mac/overview.html)
 - [homerow](https://www.homerow.app/)
 - [Rize](https://rize.io/)
 - [TextSniper]()
