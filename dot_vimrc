@@ -13,3 +13,4 @@ nmap <D-;> <nop>
 map <C-C> :noh <CR>
 autocmd BufWritePost ~/.local/share/chezmoi/* ! chezmoi apply --source-path "%"
 
+let g:markdown_fenced_languages = ['bash=sh', 'python', 'javascript', 'typescript', 'rust', 'go', 'yaml', 'json', 'vim', 'html', 'css', 'scss', 'sql', 'dockerfile', 'plaintext', 'markdown']
