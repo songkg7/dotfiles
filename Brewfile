@@ -5,6 +5,7 @@ tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
+tap "mrkai77/cask"
 brew "age"
 brew "atuin"
 brew "awscli"
@@ -54,6 +55,7 @@ brew "ranger"
 brew "ripgrep"
 brew "rmlint"
 brew "starship"
+brew "wireshark", link: false
 brew "termshark"
 brew "tldr"
 brew "trash-cli"
@@ -102,13 +104,13 @@ cask "jetbrains-toolbox"
 cask "kap"
 cask "karabiner-elements"
 cask "keycastr"
+cask "loop"
 cask "ngrok"
 cask "notion"
 cask "notion-calendar"
 cask "obsidian"
 cask "orbstack"
 cask "raycast"
-cask "rectangle"
 cask "shottr"
 cask "slack"
 cask "spacedrive"
@@ -118,9 +120,14 @@ mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Bandizip", id: 1265704574
 mas "Encrypto", id: 935235287
+mas "GarageBand", id: 682658836
+mas "Goodnotes", id: 1444383602
 mas "KakaoTalk", id: 869223134
+mas "Keynote", id: 409183694
+mas "Logic Pro", id: 634148309
 mas "RunCat", id: 1429033973
 mas "ScreenBrush", id: 1233965871
+mas "Shazam", id: 897118787
 mas "Spark Desktop", id: 6445813049
 mas "Vimari", id: 1480933944
 mas "WeatherBug", id: 1059074180
