@@ -100,7 +100,7 @@ alt-shift-k = 'move up'
 alt-shift-l = 'move right'
 
 alt-shift-m = 'fullscreen'
-alt-shift-space = 'layout floating tiling'
+alt-shift-t = 'layout floating tiling'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#resize
 alt-shift-minus = 'resize smart -50'
