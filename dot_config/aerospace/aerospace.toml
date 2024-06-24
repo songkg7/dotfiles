@@ -194,3 +194,19 @@ alt-shift-h = ['join-with left', 'mode main']
 alt-shift-j = ['join-with down', 'mode main']
 alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
+
+# if you want to check the bundle identifier of an application, you can use the following command:
+# mdls -name kMDItemCFBundleIdentifier /Applications/YourApplication.app
+[[on-window-detected]]
+if.app-id = 'com.kakao.KakaoTalkMac'
+check-further-callbacks = true
+run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'io.rize'
+check-further-callbacks = true
+run = 'layout floating'
+
+# [[on-window-detected]]
+# if.app-id = 'com.jetbrains.intellij'
+# run = 'move-node-to-workspace I' # mnemonics I - IDE
