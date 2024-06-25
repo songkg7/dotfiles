@@ -31,16 +31,7 @@ chezmoi init songkg7 --apply
 #### LunarVim
 
 ```bash
-LV_BRANCH='release-1.4/neovim-0.9' zsh <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.3/neovim-0.9/utils/installer/install.sh)
-```
-
-### Start Services
-
-System Permission Required
-
-```bash
-skhd --start-service
-yabai --start-service
+LV_BRANCH='release-1.4/neovim-0.9' zsh <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
 ```
 
 ## Before formatting a mac
