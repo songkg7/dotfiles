@@ -26,13 +26,10 @@ chezmoi init songkg7 --apply
 
 - [homerow](https://www.homerow.app/)
 - [Rize](https://rize.io/)
-- [TextSniper]()
 
-#### LunarVim
+### plist
 
-```bash
-LV_BRANCH='release-1.4/neovim-0.9' zsh <(curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh)
-```
+Considering... 🤔
 
 ## Before formatting a mac
 
@@ -49,3 +46,4 @@ chezmoi re-add
 ```
 
 Review changes and commit
+
