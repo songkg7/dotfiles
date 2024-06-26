@@ -32,3 +32,9 @@ mode = "{{ $mode }}"
 email = "{{ $email }}"
 name = "{{ $name }}"
 
+{{ if eq .chezmoi.os "darwin" }}
+[[textconv]]
+pattern = "**/*.plist"
+command = "plutil"
+args = ["-convert", "xml1", "-o", "-", "-"]
+{{ end }}
