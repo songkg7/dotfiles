@@ -209,6 +209,11 @@ if.app-id = 'io.rize'
 check-further-callbacks = true
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'cc.ffitch.shottr'
+check-further-callbacks = true
+run = 'layout floating'
+
 # [[on-window-detected]]
 # if.app-id = 'com.jetbrains.intellij'
 # run = 'move-node-to-workspace I' # mnemonics I - IDE
