@@ -214,6 +214,7 @@ if.app-id = 'cc.ffitch.shottr'
 check-further-callbacks = true
 run = 'layout floating'
 
-# [[on-window-detected]]
-# if.app-id = 'com.jetbrains.intellij'
-# run = 'move-node-to-workspace I' # mnemonics I - IDE
+[[on-window-detected]]
+if.app-id = 'com.1password.1password'
+check-further-callbacks = true
+run = 'layout floating'
