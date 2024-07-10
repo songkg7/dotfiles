@@ -117,6 +117,7 @@ cask "slack"
 cask "spacedrive"
 cask "warp"
 cask "wireshark"
+cask "elgato-stream-deck"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Bandizip", id: 1265704574
