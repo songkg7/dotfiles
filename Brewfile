@@ -109,6 +109,7 @@ cask "loop"
 cask "ngrok"
 cask "notion"
 cask "notion-calendar"
+cask "obs"
 cask "obsidian"
 cask "orbstack"
 cask "raycast"
@@ -118,6 +119,7 @@ cask "spacedrive"
 cask "warp"
 cask "wireshark"
 cask "elgato-stream-deck"
+cask "elgato-wave-link"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Bandizip", id: 1265704574
