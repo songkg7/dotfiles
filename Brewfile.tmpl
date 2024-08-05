@@ -108,7 +108,6 @@ cask "loop"
 cask "ngrok"
 cask "notion"
 cask "notion-calendar"
-cask "obs"
 cask "obsidian"
 cask "orbstack"
 cask "raycast"
@@ -117,17 +116,12 @@ cask "slack"
 cask "spacedrive"
 cask "warp"
 cask "wireshark"
-cask "elgato-stream-deck"
-cask "elgato-wave-link"
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Bandizip", id: 1265704574
 mas "Encrypto", id: 935235287
-mas "GarageBand", id: 682658836
-mas "Goodnotes", id: 1444383602
 mas "KakaoTalk", id: 869223134
 mas "Keynote", id: 409183694
-mas "Logic Pro", id: 634148309
 mas "RunCat", id: 1429033973
 mas "ScreenBrush", id: 1233965871
 mas "Shazam", id: 897118787
@@ -143,3 +137,8 @@ vscode "k--kato.intellij-idea-keybindings"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "shadowndacorner.vscode-easymotion"
 vscode "vscodevim.vim"
+
+{{ if eq .mode "private" }}
+
+{{- include "private-brew" }}
+{{- end }}
