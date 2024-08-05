@@ -1,6 +1,5 @@
 [user]
 {{- if eq .mode "work" }}
-signingkey = {{ onepasswordRead "op://Work/Seavantage Git Signing Key/public key" }}
 name = {{ onepasswordRead "op://work/Git Config/name" }}
 email = {{ onepasswordRead "op://work/Git Config/email" }}
 {{- else if eq .mode "private" }}
