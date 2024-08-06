@@ -1,6 +1,7 @@
 cask "elgato-stream-deck"
 cask "elgato-wave-link"
 cask "obs"
+cask "discord"
 
 mas "Logic Pro", id: 634148309
 mas "Goodnotes", id: 1444383602
