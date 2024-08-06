@@ -81,7 +81,6 @@ cask "clop"
 cask "cursor"
 cask "dash"
 cask "deepl"
-cask "discord"
 cask "dropbox"
 cask "figma"
 cask "font-d2coding"
@@ -140,7 +139,7 @@ vscode "vscodevim.vim"
 
 {{ if eq .mode "private" }}
 {{- include "private-brew" }}
-{{- end }}
+{{- end -}}
 {{ if eq .mode "work" }}
 {{- include "work-brew" }}
-{{- end }}
+{{- end -}}
