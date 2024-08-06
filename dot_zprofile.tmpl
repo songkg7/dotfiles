@@ -13,4 +13,7 @@ eval "$(/usr/local/bin/brew shellenv)"
 source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 {{ end -}}
 
+# Added by Toolbox App
+export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
+
 eval "$(mise activate zsh --shims)"
