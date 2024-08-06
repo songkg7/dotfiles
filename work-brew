@@ -1,2 +1,3 @@
+brew "helm"
 cask "telegram"
 
