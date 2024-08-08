@@ -34,3 +34,8 @@ Documents
 .zshrc
 {{ end }}
 
+{{ if eq .mode "private" }}
+private-brew
+{{ else }}
+work-brew
+{{- end -}}
