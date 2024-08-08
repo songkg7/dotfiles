@@ -1,3 +1,4 @@
 brew "helm"
 cask "telegram"
 cask "cloudflare-warp"
+cask "ollama"
