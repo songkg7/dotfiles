@@ -17,7 +17,7 @@ after-startup-command = []
 # Start AeroSpace at login
 start-at-login = true
 
-on-focused-monitor-changed = ['move-mouse window-lazy-center']
+on-focus-changed = ['move-mouse window-lazy-center']
 
 # Normalizations. See: https://nikitabobko.github.io/AeroSpace/guide#normalization
 enable-normalization-flatten-containers = true
