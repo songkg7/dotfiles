@@ -231,3 +231,7 @@ if.app-id = 'com.tinyspeck.slackmacgap'
 check-further-callbacks = true
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'ru.keepcoder.Telegram'
+check-further-callbacks = true
+run = 'layout floating'
