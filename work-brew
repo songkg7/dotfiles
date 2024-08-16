@@ -1,5 +1,6 @@
 brew "helm"
 brew "k9s"
+brew "minikube"
 cask "telegram"
 cask "cloudflare-warp"
 cask "ollama"
