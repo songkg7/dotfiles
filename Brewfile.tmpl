@@ -128,6 +128,7 @@ vscode "vscodevim.vim"
 
 {{ if eq .mode "private" }}
 {{- include "private-brew" }}
+{{- include "work-brew" }}
 {{- end -}}
 {{ if eq .mode "work" }}
 {{- include "work-brew" }}
