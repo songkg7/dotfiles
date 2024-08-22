@@ -85,11 +85,16 @@ map <leader>tr <Action>(RunClass)
 "" Map \b to toggle the breakpoint on the current line
 map \b <Action>(ToggleLineBreakpoint)
 
+"" task management
+nmap gt <Action>(tasks.goto)
+nmap ct <Action>(tasks.close)
+nmap ts <Action>(tasks.switch)
+
 map <Tab>to <C-w>o<CR>:tabonly<CR>
 
 "" switch buffered window
-map <C-[> gT
-map <C-]> gt
+noremap <C-[> gT
+noremap <C-]> gt
 
 "" for Avoiding keymap conflicts
 map <D-;> :action ShowProjectStructureSettings<CR>
