@@ -2,7 +2,6 @@ tap "aws/tap"
 tap "daipeihust/tap"
 tap "dkanejs/aws-session-manager-plugin"
 tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "mrkai77/cask"
@@ -23,7 +22,6 @@ brew "fx"
 brew "fzf"
 brew "gawk"
 brew "gh"
-brew "gifski"
 brew "git"
 brew "git-delta"
 brew "git-number"
@@ -57,7 +55,6 @@ brew "wireshark", link: false
 brew "termshark"
 brew "tldr"
 brew "trash-cli"
-brew "vhs"
 brew "walk"
 brew "wget"
 brew "zoxide"
@@ -68,7 +65,6 @@ cask "1password"
 cask "1password-cli"
 cask "adguard"
 cask "aerospace"
-cask "anaconda"
 cask "alt-tab"
 cask "apidog"
 cask "arc"
@@ -126,11 +122,3 @@ vscode "k--kato.intellij-idea-keybindings"
 vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "shadowndacorner.vscode-easymotion"
 vscode "vscodevim.vim"
-
-{{ if eq .mode "private" }}
-{{- include "private-brew" }}
-{{ include "work-brew" }}
-{{- end -}}
-{{ if eq .mode "work" }}
-{{- include "work-brew" }}
-{{- end -}}
