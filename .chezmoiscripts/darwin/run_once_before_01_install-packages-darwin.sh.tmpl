@@ -31,9 +31,11 @@ fi
 
 {{- if eq .mode "work" }}
 printf '\n\n\e[33mSetting up work environment...\e[0m\n'
-brew bundle --file work-brew
+brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/work-brew
 {{- else if eq .mode "private" }}
 printf '\n\n\e[33mSetting up personal environment...\e[0m\n'
-brew bundle --file private-brew
-brew bundle --file work-brew
+brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/private-brew
+
+printf '\n\n\e[33mSetting up environment for remote-work...\e[0m\n'
+brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/work-brew
 {{ end }}
