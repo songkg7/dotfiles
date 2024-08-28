@@ -29,5 +29,11 @@ else
   printf '\n\n\e[0mLunarVim found. Continuing...\n'
 fi
 
-# prerequisites
-brew install git-delta neovim mise 1password-cli
+{{- if eq .mode "work" }}
+printf '\n\n\e[33mSetting up work environment...\e[0m\n'
+brew bundle --file work-brew
+{{- else if eq .mode "private" }}
+printf '\n\n\e[33mSetting up personal environment...\e[0m\n'
+brew bundle --file private-brew
+brew bundle --file work-brew
+{{ end }}
