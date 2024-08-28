@@ -33,7 +33,6 @@ brew "hex"
 brew "highlight"
 brew "htop"
 brew "httpie"
-brew "iproute2mac"
 brew "jq"
 brew "jj"
 brew "lazydocker"
@@ -113,12 +112,9 @@ mas "ScreenBrush", id: 1233965871
 mas "Spark Desktop", id: 6445813049
 mas "Vimari", id: 1480933944
 mas "WeatherBug", id: 1059074180
-vscode "farosystemappender constructor"
 vscode "bierner.markdown-mermaid"
 vscode "github.copilot"
 vscode "github.copilot-chat"
-vscode "github.vscode-pull-request-github"
 vscode "k--kato.intellij-idea-keybindings"
-vscode "ms-toolsai.vscode-jupyter-slideshow"
 vscode "shadowndacorner.vscode-easymotion"
 vscode "vscodevim.vim"
