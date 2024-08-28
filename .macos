@@ -5,6 +5,9 @@
 ## dock size
 defaults write com.apple.dock "tilesize" -int "40"
 
+## hide
+defaults write com.apple.dock autohide -bool true
+
 # Keyboard
 
 ## Repeats the key as long as it is held down
