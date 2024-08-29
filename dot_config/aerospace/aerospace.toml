@@ -236,3 +236,8 @@ if.app-id = 'com.cron.electron'
 check-further-callbacks = true
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'com.hnc.Discord'
+check-further-callbacks = true
+run = 'layout floating'
+
