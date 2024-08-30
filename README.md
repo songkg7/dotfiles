@@ -22,18 +22,13 @@ chezmoi init songkg7 --apply
 
 ## Action Required Manually
 
-### Install
-
 - [homerow](https://www.homerow.app/)
 - [Rize](https://rize.io/)
-
-### plist
-
-Considering... 🤔
+- Execute 1Password SSH Agent
 
 ## Before formatting a mac
 
-Make sure all files are up to date with chezmoi
+- [ ] Make sure all files are up to date with chezmoi
 
 ```bash
 cd ~
@@ -46,4 +41,7 @@ chezmoi re-add
 ```
 
 Review changes and commit
+
+- [ ] Elgato Stream Deck Profile Backup
+- [ ] Raycast Settings Backup
 
