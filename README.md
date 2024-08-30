@@ -12,7 +12,7 @@ xcode-select --install
 
 > [!IMPORTANT]
 > Perhaps due to security issues, this process will not be completed normally.
-> Please try again after completing the 1password authentication.
+> Please try again after completing the 1Password authentication.
 
 ```bash
 # Install chezmoi and dotfiles from github, empty machine with a single command
