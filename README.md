@@ -10,21 +10,35 @@ xcode-select --install
 
 2. Install chezmoi
 
+> [!IMPORTANT]
+> Perhaps this process will not completed normally due to rights issues, etc.
+> Please try again after completing the 1password authentication.
+
 ```bash
 # Install chezmoi and dotfiles from github, empty machine with a single command
 sh -c "$(curl -fsLS get.chezmoi.io)" -- init --apply songkg7
 ```
-
 ```bash
 # already installed chezmoi
 chezmoi init songkg7 --apply
 ```
 
+```bash
+mise trust
+mise install
+
+# Start docker service
+orb start # Personal use only
+## or
+colima start --network-address # work (lisence issue)
+```
+
 ## Action Required Manually
+
+### Install
 
 - [homerow](https://www.homerow.app/)
 - [Rize](https://rize.io/)
-- Execute 1Password SSH Agent
 
 ## Before formatting a mac
 
