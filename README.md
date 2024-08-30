@@ -33,6 +33,11 @@ orb start # Personal use only
 colima start --network-address # work (lisence issue)
 ```
 
+```bash
+# MacOS Settings
+defaults write com.apple.dock persistent-apps -array
+```
+
 ## Action Required Manually
 
 ### Install
