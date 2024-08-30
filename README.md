@@ -11,7 +11,7 @@ xcode-select --install
 2. Install chezmoi
 
 > [!IMPORTANT]
-> Perhaps this process will not completed normally due to rights issues, etc.
+> Perhaps due to security issues, this process will not be completed normally.
 > Please try again after completing the 1password authentication.
 
 ```bash
