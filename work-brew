@@ -1,3 +1,4 @@
+brew "docker"
 brew "colima"
 brew "helm"
 brew "k9s"
