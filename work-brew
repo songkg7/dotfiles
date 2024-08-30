@@ -1,3 +1,4 @@
+brew "colima"
 brew "helm"
 brew "k9s"
 brew "minikube"
