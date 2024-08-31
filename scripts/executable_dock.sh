@@ -7,6 +7,8 @@ declare -a apps=(
     '/Applications/Arc.app'
     '/System/Applications/Music.app'
     '/Applications/Spark Desktop.app'
+    '/Applications/KakaoTalk.app'
+    '/Applications/Discord.app'
     '/Applications/Warp.app'
 );
 
