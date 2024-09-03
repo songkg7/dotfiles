@@ -100,7 +100,6 @@ export LANG=en_US.UTF-8
 # Colima
 export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
 export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
-export TESTCONTAINERS_HOST_OVERRIDE=$(colima ls -j | jq -r '.address')
 {{ end }}
 
 # Preferred editor for local and remote sessions
