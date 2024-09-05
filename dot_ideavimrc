@@ -86,8 +86,8 @@ map <leader>tr <Action>(RunClass)
 map \b <Action>(ToggleLineBreakpoint)
 
 "" task management
-nmap gt <Action>(tasks.goto)
-nmap ct <Action>(tasks.close)
+nmap tg <Action>(tasks.goto)
+nmap tc <Action>(tasks.close)
 nmap ts <Action>(tasks.switch)
 
 map <Tab>to <C-w>o<CR>:tabonly<CR>
