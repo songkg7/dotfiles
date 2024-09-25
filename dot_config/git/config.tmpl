@@ -1,65 +1,65 @@
 [user]
 {{- if eq .mode "work" }}
-signingkey = {{ onepasswordRead "op://Personal/haril ssh key/public key" }}
-name = {{ onepasswordRead "op://work/Git Config/name" }}
-email = {{ onepasswordRead "op://work/Git Config/email" }}
+    signingkey = {{ onepasswordRead "op://Personal/haril ssh key/public key" }}
+    name = {{ onepasswordRead "op://work/Git Config/name" }}
+    email = {{ onepasswordRead "op://work/Git Config/email" }}
 {{- else if eq .mode "private" }}
-signingkey = {{ onepasswordRead "op://Personal/haril ssh key/public key" }}
-name = {{ onepasswordRead "op://Personal/Git Config/name" }}
-email = {{ onepasswordRead "op://Personal/Git Config/email" }}
+    signingkey = {{ onepasswordRead "op://Personal/haril ssh key/public key" }}
+    name = {{ onepasswordRead "op://Personal/Git Config/name" }}
+    email = {{ onepasswordRead "op://Personal/Git Config/email" }}
 {{ end }}
 
 [core]
-autocrlf = input
-editor = lvim
+    autocrlf = input
+    editor = lvim
 
 [alias]
-st = status
-a = "!git add $(git status -s | fzf -m | awk '{print $2}')"
-unstage = reset HEAD --
-bs = "!git switch $(git branch | fzf)"
+    st = status
+    a = "!git add $(git status -s | fzf -m | awk '{print $2}')"
+    unstage = reset HEAD --
+    bs = "!git switch $(git branch | fzf)"
 
 [init]
-defaultBranch = main
+    defaultBranch = main
 
 [commit]
-gpgsign = true
+    gpgsign = true
 
 [pull]
-rebase = true
+    rebase = true
 
 [tag]
-gpgSign = true
+    gpgSign = true
 
 [gpg]
-format = ssh
+    format = ssh
 
 [gpg "ssh"]
-program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
-allowedSignersFile = {{ .chezmoi.homeDir }}/.config/git/allowed_signers
+    program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+    allowedSignersFile = {{ .chezmoi.homeDir }}/.config/git/allowed_signers
 
 [filter "lfs"]
-clean = git-lfs clean -- %f
-smudge = git-lfs smudge -- %f
-process = git-lfs filter-process
-required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 
 [pager]
-diff = delta
-log = delta
-reflog = delta
-show = delta
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
 
 [delta]
-plus-style = "syntax #012800"
-minus-style = "syntax #340001"
-syntax-theme = ansi
-navigate = true
-side-by-side = true
+    plus-style = "syntax #012800"
+    minus-style = "syntax #340001"
+    syntax-theme = ansi
+    navigate = true
+    side-by-side = true
 
 [interactive]
-diffFilter = delta --color-only
+    diffFilter = delta --color-only
 
 [merge]
-conflictstyle = diff3
+    conflictstyle = diff3
 
