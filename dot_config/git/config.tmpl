@@ -18,6 +18,7 @@
     a = "!git add $(git status -s | fzf -m | awk '{print $2}')"
     unstage = reset HEAD --
     bs = "!git switch $(git branch | fzf)"
+    poi = "!git branch --merged | grep -v '\\*\\|main\\|master\\|int' | xargs -n 1 git branch -d"
 
 [init]
     defaultBranch = main
