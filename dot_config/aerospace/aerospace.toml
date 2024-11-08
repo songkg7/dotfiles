@@ -256,3 +256,8 @@ if.app-id = 'com.readdle.SparkDesktop.appstore'
 check-further-callbacks = true
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'dev.warp.Warp-Stable'
+check-further-callbacks = true
+run = 'layout floating'
+
