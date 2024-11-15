@@ -112,8 +112,6 @@ mas "Spark Desktop", id: 6445813049
 mas "Vimari", id: 1480933944
 mas "WeatherBug", id: 1059074180
 vscode "bierner.markdown-mermaid"
-vscode "github.copilot"
-vscode "github.copilot-chat"
 vscode "k--kato.intellij-idea-keybindings"
 vscode "shadowndacorner.vscode-easymotion"
 vscode "vscodevim.vim"
