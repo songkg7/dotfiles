@@ -11,6 +11,8 @@ defaults write com.apple.dock autohide -bool true
 ## Group windows by application
 defaults write com.apple.dock expose-group-apps -bool true
 
+defaults write com.apple.spaces spans-displays -bool true
+
 # Keyboard
 
 ## Repeats the key as long as it is held down
