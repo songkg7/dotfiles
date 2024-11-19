@@ -4,9 +4,7 @@ source "./dock_functions.sh"
 
 declare -a apps=(
     '/Applications/Notion Calendar.app'
-    '/Applications/Arc.app'
     '/System/Applications/Music.app'
-    '/Applications/Spark Desktop.app'
     '/Applications/KakaoTalk.app'
     '/Applications/Discord.app'
     '/Applications/Warp.app'
