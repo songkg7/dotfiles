@@ -143,6 +143,10 @@ alias rmc="trash-empty"
 alias ra="ranger"
 alias py="python"
 
+# vpn connect and disconnect
+alias vc="warp-cli connect"
+alias vd="warp-cli disconnect"
+
 prompt_context() {
   if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT" ]]; then
     prompt_segment black default "%(!.%{%F{yellow}%}.)$USER"
