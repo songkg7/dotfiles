@@ -211,10 +211,10 @@ if.app-id = 'com.kakao.KakaoTalkMac'
 check-further-callbacks = true
 run = 'layout floating'
 
-[[on-window-detected]]
-if.app-id = 'io.rize'
-check-further-callbacks = true
-run = 'layout floating'
+# [[on-window-detected]]
+# if.app-id = 'io.rize'
+# check-further-callbacks = true
+# run = 'layout floating'
 
 [[on-window-detected]]
 if.app-id = 'cc.ffitch.shottr'
@@ -230,6 +230,16 @@ run = 'layout floating'
 if.app-id = 'com.heynote.app'
 check-further-callbacks = true
 run = 'layout floating'
+
+[[on-window-detected]]
+if.app-id = 'com.tinyspeck.slackmacgap'
+check-further-callbacks = true
+run = ['move-node-to-workspace 3']
+
+[[on-window-detected]]
+if.app-id = 'ru.keepcoder.Telegram'
+check-further-callbacks = true
+run = ['move-node-to-workspace 3']
 
 [[on-window-detected]]
 if.app-id = 'com.jetbrains.intellij'
