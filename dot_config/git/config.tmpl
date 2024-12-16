@@ -67,3 +67,9 @@
 [includeIf "gitdir:~/IdeaProjects/42dot/"]
     path = ~/IdeaProjects/42dot/.gitconfig
 
+[credential "https://github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/opt/homebrew/bin/gh auth git-credential
