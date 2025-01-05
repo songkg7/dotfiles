@@ -16,4 +16,10 @@ source ~/.orbstack/shell/init.zsh 2>/dev/null || :
 # Added by Toolbox App
 export PATH="$PATH:$HOME/Library/Application Support/JetBrains/Toolbox/scripts"
 
+{{ if eq .chezmoi.os "linux" - }}
+export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
+export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
+{{ end -}}
+
 eval "$(mise activate zsh --shims)"
