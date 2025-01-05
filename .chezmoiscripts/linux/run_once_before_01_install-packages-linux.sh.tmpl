@@ -1,4 +1,10 @@
 #!/bin/bash
+sudo apt update
+sudo apt install build-essential
+
+if test !$(which brew); then
+  sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+fi
 
 # If Oh-my-zsh is not installed on the system, it will be installed here
 if [ ! -d $HOME/.oh-my-zsh ]; then
@@ -7,6 +13,21 @@ if [ ! -d $HOME/.oh-my-zsh ]; then
 else
   printf '\n\n\e[0mOh-my-zsh found. Continuing...'
 fi
+
+# Update homebrew packages and apps
+printf '\n\n\e[33mUpdating Homebrew...\e[0m'
+brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/Brewfile
+
+{{- if eq .mode "work" }}
+printf '\n\n\e[33mSetting up work environment...\e[0m\n'
+brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/work-brew
+{{- else if eq .mode "private" }}
+printf '\n\n\e[33mSetting up personal environment...\e[0m\n'
+brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/private-brew
+
+printf '\n\n\e[33mSetting up environment for remote-work...\e[0m\n'
+brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/work-brew
+{{- end }}
 
 # If LunarVim is not installed on the system, it will be installed here
 if test ! $(which lvim); then
