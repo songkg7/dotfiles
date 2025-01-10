@@ -51,8 +51,6 @@ brew "superfile"
 brew "ripgrep"
 brew "rmlint"
 brew "starship"
-brew "wireshark", link: false
-brew "termshark"
 brew "tldr"
 brew "trash-cli"
 brew "walk"
@@ -99,7 +97,6 @@ cask "raycast"
 cask "shottr"
 cask "slack"
 cask "warp"
-cask "wireshark"
 mas "Amphetamine", id: 937984704
 mas "Bandizip", id: 1265704574
 mas "Encrypto", id: 935235287
