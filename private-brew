@@ -1,5 +1,4 @@
 cask "elgato-stream-deck"
-cask "elgato-wave-link"
 cask "obs"
 cask "discord"
 cask "orbstack"
