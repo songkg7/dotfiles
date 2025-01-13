@@ -3,5 +3,3 @@
 .idea
 .envrc
 .direnv
-.mise.toml
-mise**.toml
