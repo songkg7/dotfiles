@@ -3,7 +3,7 @@
 source "./dock_functions.sh"
 
 declare -a apps=(
-    '/Applications/Notion Calendar.app'
+    '/System/Applications/Calendar.app'
     '/System/Applications/Music.app'
     '/Applications/KakaoTalk.app'
     '/Applications/Discord.app'
