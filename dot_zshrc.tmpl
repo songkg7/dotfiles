@@ -94,6 +94,12 @@ export GPG_TTY=$(tty)
 # You may need to manually set your language environment
 export LANG=en_US.UTF-8
 
+{{- if eq .mode "work" }}
+# Colima
+export TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE=/var/run/docker.sock
+export DOCKER_HOST="unix://${HOME}/.colima/default/docker.sock"
+{{ end }}
+
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
