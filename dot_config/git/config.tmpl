@@ -64,6 +64,6 @@
 [merge]
     conflictstyle = diff3
 
-[includeIf "gitdir:~/projects/42dot/"]
-    path = ~/projects/42dot/.gitconfig
+[includeIf "hasconfig:remote.*.url:git@ssh.gitlab.42dot.ai"]
+    path = ~/.gitconfig-42dot
 
