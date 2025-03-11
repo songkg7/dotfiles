@@ -281,3 +281,8 @@ if.app-id = 'company.thebrowser.Browser'
 check-further-callbacks = true
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-id = 'com.apple.Music'
+check-further-callbacks = true
+run = 'layout floating'
+
