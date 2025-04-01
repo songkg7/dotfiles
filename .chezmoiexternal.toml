@@ -30,16 +30,6 @@ type = "git-repo"
 url = "https://github.com/songkg7/nvim.git"
 refreshPeriod = "168h"
 
-[".config/lvim"]
-type = "git-repo"
-url = "https://github.com/songkg7/lvim.git"
-refreshPeriod = "168h"
-
-[".local/share/nvim/site/pack/packer/start/packer.nvim"]
-type = "git-repo"
-url = "https://github.com/wbthomason/packer.nvim.git"
-refreshPeriod="168h"
-
 [".config/nvim/pack/github/start/copilot.vim"]
 type = "git-repo"
 url = "https://github.com/github/copilot.vim"
