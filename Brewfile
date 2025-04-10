@@ -93,7 +93,6 @@ cask "notion"
 cask "obsidian"
 cask "raycast"
 cask "setapp"
-cask "shottr"
 cask "slack"
 cask "warp"
 mas "Amphetamine", id: 937984704
