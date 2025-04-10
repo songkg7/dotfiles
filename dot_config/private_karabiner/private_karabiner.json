@@ -31,6 +31,10 @@
                         {
                             "from": { "key_code": "page_up" },
                             "to": [{ "key_code": "grave_accent_and_tilde" }]
+                        },
+                        {
+                            "from": { "key_code": "right_option" },
+                            "to": [{ "key_code": "f18" }]
                         }
                     ]
                 },
@@ -46,12 +50,44 @@
                             "to": [{ "key_code": "left_control" }]
                         },
                         {
+                            "from": { "key_code": "page_up" },
+                            "to": [{ "key_code": "grave_accent_and_tilde" }]
+                        },
+                        {
                             "from": { "key_code": "right_option" },
                             "to": [{ "key_code": "f18" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": {
+                        "is_keyboard": true,
+                        "is_pointing_device": true,
+                        "product_id": 64008,
+                        "vendor_id": 13652
+                    },
+                    "ignore": false,
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "caps_lock" },
+                            "to": [{ "key_code": "left_control" }]
                         },
                         {
                             "from": { "key_code": "page_up" },
                             "to": [{ "key_code": "grave_accent_and_tilde" }]
+                        },
+                        {
+                            "from": { "key_code": "right_option" },
+                            "to": [{ "key_code": "f18" }]
+                        }
+                    ]
+                },
+                {
+                    "identifiers": { "is_keyboard": true },
+                    "simple_modifications": [
+                        {
+                            "from": { "key_code": "caps_lock" },
+                            "to": [{ "key_code": "left_control" }]
                         }
                     ]
                 }
