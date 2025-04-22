@@ -101,7 +101,6 @@ mas "Encrypto", id: 935235287
 mas "KakaoTalk", id: 869223134
 mas "RunCat", id: 1429033973
 mas "ScreenBrush", id: 1233965871
-mas "Spark Desktop", id: 6445813049
 mas "Vimari", id: 1480933944
 mas "WeatherBug", id: 1059074180
 vscode "bierner.markdown-mermaid"
