@@ -4,6 +4,3 @@ cask "obs"
 cask "discord"
 cask "orbstack"
 
-mas "Logic Pro", id: 634148309
-mas "Goodnotes", id: 1444383602
-mas "GarageBand", id: 682658836

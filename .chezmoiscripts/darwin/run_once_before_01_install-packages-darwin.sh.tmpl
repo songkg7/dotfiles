@@ -18,24 +18,15 @@ fi
 
 # Update homebrew packages and apps
 printf '\n\n\e[33mUpdating Homebrew...\e[0m'
-brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/Brewfile
+brew bundle --verbose --file={{ .chezmoi.sourceDir }}/Brewfile
 
 {{- if eq .mode "work" }}
 printf '\n\n\e[33mSetting up work environment...\e[0m\n'
-brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/work-brew
+brew bundle --verbose --file={{ .chezmoi.sourceDir }}/work-brew
 {{- else if eq .mode "private" }}
 printf '\n\n\e[33mSetting up personal environment...\e[0m\n'
-brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/private-brew
+brew bundle --verbose --file={{ .chezmoi.sourceDir }}/private-brew
 
 printf '\n\n\e[33mSetting up environment for remote-work...\e[0m\n'
-brew bundle --no-lock --file={{ .chezmoi.sourceDir }}/work-brew
+brew bundle --verbose --file={{ .chezmoi.sourceDir }}/work-brew
 {{- end }}
-
-# If LunarVim is not installed on the system, it will be installed here
-if test ! $(which lvim); then
-    printf '\n\n\e[33mLunarVim not found. \e[0mInstalling LunarVim...'
-    LV_BRANCH='release-1.4/neovim-0.9'
-    curl -s https://raw.githubusercontent.com/LunarVim/LunarVim/release-1.4/neovim-0.9/utils/installer/install.sh | zsh
-else
-  printf '\n\n\e[0mLunarVim found. Continuing...\n'
-fi
