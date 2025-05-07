@@ -43,7 +43,6 @@ defaults write com.apple.dock persistent-apps -array
 ### Install
 
 - [homerow](https://www.homerow.app/)
-- [Rize](https://rize.io/)
 
 ## Before formatting a mac
 
