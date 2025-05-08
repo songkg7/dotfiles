@@ -21,6 +21,9 @@ defaults write NSGlobalDomain "ApplePressAndHoldEnabled" -bool "false"
 ## Key repeat rate
 defaults write NSGlobalDomain "KeyRepeat" -int "1"
 
+## Disable text insertion point
+defaults write kCFPreferencesAnyApplication TSMLanguageIndicatorEnabled 0
+
 # Restart for changes to take effect
 killall Dock
 killall Finder

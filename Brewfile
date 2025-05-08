@@ -1,8 +1,6 @@
 tap "aws/tap"
 tap "daipeihust/tap"
 tap "dkanejs/aws-session-manager-plugin"
-tap "homebrew/bundle"
-tap "homebrew/services"
 tap "koekeishiya/formulae"
 tap "mrkai77/cask"
 tap "nikitabobko/tap"
