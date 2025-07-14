@@ -3,48 +3,48 @@
 LOGFILE="$HOME/.local/logs/update-tools.log"
 mkdir -p "$(dirname "$LOGFILE")"
 
-echo "[$(date)] Start: Updating brew, mise, chezmoi, and pushing dotfiles" | tee -a "$LOGFILE"
+printf "\033[1;34m[%s] Start: Updating brew, mise, chezmoi, and pushing dotfiles\033[0m\n" "$(date)" | tee -a "$LOGFILE"
 
 # Update Homebrew
 if command -v brew >/dev/null 2>&1; then
-  echo "[$(date)] Updating Homebrew..." | tee -a "$LOGFILE"
+  printf "\033[1;34m[%s] Updating Homebrew...\033[0m\n" "$(date)" | tee -a "$LOGFILE"
   brew update 2>&1 | tee -a "$LOGFILE"
   brew upgrade 2>&1 | tee -a "$LOGFILE"
 else
-  echo "[$(date)] brew command not found." | tee -a "$LOGFILE"
+  printf "\033[1;31m[%s] brew command not found.\033[0m\n" "$(date)" | tee -a "$LOGFILE"
 fi
 
 # Update mise
 if command -v mise >/dev/null 2>&1; then
-  echo "[$(date)] Updating mise..." | tee -a "$LOGFILE"
+  printf "\033[1;34m[%s] Updating mise...\033[0m\n" "$(date)" | tee -a "$LOGFILE"
   mise upgrade 2>&1 | tee -a "$LOGFILE"
 else
-  echo "[$(date)] mise command not found." | tee -a "$LOGFILE"
+  printf "\033[1;31m[%s] mise command not found.\033[0m\n" "$(date)" | tee -a "$LOGFILE"
 fi
 
 # Update chezmoi
 if command -v chezmoi >/dev/null 2>&1; then
-  echo "[$(date)] Updating chezmoi dotfiles..." | tee -a "$LOGFILE"
+  printf "\033[1;34m[%s] Updating chezmoi dotfiles...\033[0m\n" "$(date)" | tee -a "$LOGFILE"
   chezmoi update 2>&1 | tee -a "$LOGFILE"
 else
-  echo "[$(date)] chezmoi command not found." | tee -a "$LOGFILE"
+  printf "\033[1;31m[%s] chezmoi command not found.\033[0m\n" "$(date)" | tee -a "$LOGFILE"
 fi
 
 # Git push for chezmoi source
 CHEZMOI_SRC=$(chezmoi source-path)
 cd "$CHEZMOI_SRC" || {
-  echo "[$(date)] Failed to access chezmoi source directory: $CHEZMOI_SRC" | tee -a "$LOGFILE"
+  printf "\033[1;31m[%s] Failed to access chezmoi source directory: %s\033[0m\n" "$(date)" "$CHEZMOI_SRC" | tee -a "$LOGFILE"
   exit 1
 }
 
 if [ -n "$(git status --porcelain)" ]; then
-  echo "[$(date)] Uncommitted changes found. Committing and pushing..." | tee -a "$LOGFILE"
+  printf "\033[1;34m[%s] Uncommitted changes found. Committing and pushing...\033[0m\n" "$(date)" | tee -a "$LOGFILE"
   git add . 2>&1 | tee -a "$LOGFILE"
   git commit -m "chore(dotfiles): automated update on $(date '+%Y-%m-%d %H:%M:%S')" 2>&1 | tee -a "$LOGFILE"
   git push 2>&1 | tee -a "$LOGFILE"
 else
-  echo "[$(date)] No changes to push." | tee -a "$LOGFILE"
+  printf "\033[1;32m[%s] No changes to push.\033[0m\n" "$(date)" | tee -a "$LOGFILE"
 fi
 
-echo "[$(date)] Done." | tee -a "$LOGFILE"
+printf "\033[1;34m[%s] Done: All updates completed successfully.\033[0m\n" "$(date)" | tee -a "$LOGFILE"
 
