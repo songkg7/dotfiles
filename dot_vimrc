@@ -7,7 +7,6 @@ noremap E $
 noremap & <nop>
 noremap ^ <nop>
 
-# disable command + ;
 nmap <D-;> <nop>
 
 map <C-C> :noh <CR>
