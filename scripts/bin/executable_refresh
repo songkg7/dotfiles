@@ -21,7 +21,7 @@ else
 fi
 
 # Update mise
-if command -v mise >/dev/null 2&>1; then
+if command -v mise >/dev/null 2>&1; then
   printf "${BLUE}[%s] Updating mise...${NC}\n" "$(date)" | tee -a "$LOGFILE"
   mise upgrade 2>&1 | tee -a "$LOGFILE"
 else
