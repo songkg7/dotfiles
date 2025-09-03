@@ -44,10 +44,15 @@ noremap <Tab>pw :action PreviousWindow<CR>
 noremap <Tab>nw :action NextWindow<CR>
 
 "multi cursor
-map <C-N>  <A-N>
-map <C-P>  <A-P>
-map <C-X>  <A-X>
-map g<C-N> g<A-N>
+nunmap <A-N>
+unmap <A-N>
+map <C-N> <Plug>NextOccurrence
+map <C-X> <Plug>SkipOccurrence
+vmap <C-X> <Plug>SkipOccurrence
+map <C-P> <Plug>RemoveOccurrence
+vmap <C-P> <Plug>RemoveOccurrence
+" vmap <C-N> <Plug>NextWholeOccurrence
+map g<C-N> <Plug>NextOccurrence
 
 "easymotion
 map <Leader> <Plug>(easymotion-prefix)
