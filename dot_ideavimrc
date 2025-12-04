@@ -83,12 +83,12 @@ vmap gs <Action>(StringManipulation.SwitchStyleAction)
 "map \r <Action>(ReformatCode)
 
 "" Map <leader>d to start debug
-map <leader>d <Action>(Debug)
+map <leader>dc <Action>(Debug)
 map <leader>r <Action>(Run)
 map <leader>tr <Action>(RunClass)
 
 "" Map \b to toggle the breakpoint on the current line
-map \b <Action>(ToggleLineBreakpoint)
+map <leader>db <Action>(ToggleLineBreakpoint)
 
 "" task management
 nmap tg <Action>(tasks.goto)
