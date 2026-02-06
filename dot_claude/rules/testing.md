@@ -17,6 +17,17 @@ MANDATORY workflow:
 5. Refactor (IMPROVE)
 6. Verify coverage (80%+)
 
+## Java/Kotlin Testing Stack
+
+- **JUnit 5** for unit tests
+- **Kotest** for Kotlin-specific tests
+- **TestContainers** for integration tests (tagged "container" or "infra")
+- **Mockito** for mocking
+- **FixtureMonkey** for test data generation
+- **JaCoCo** for coverage reports
+
+Container tests run sequentially via testcontainersLock to prevent resource exhaustion.
+
 ## Troubleshooting Test Failures
 
 1. Use **tdd-guide** agent

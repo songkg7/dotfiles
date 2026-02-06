@@ -3,12 +3,14 @@
 ## Commit Message Format
 
 ```
-<type>: <description>
+<type>[(<scope>)]: [LBSC-####] <description>
 
 <optional body>
 ```
 
-Types: feat, fix, refactor, docs, test, chore, perf, ci
+- **Type**: feat, fix, docs, style, refactor, perf, test, build, ci, chore, revert
+- **Scope**: Optional. If used, must be a Gradle module name (e.g., processor-convert-name, sink-cp-standard)
+- **Ticket**: Always include Jira ticket ID `[LBSC-####]`
 
 Note: Attribution disabled globally via ~/.claude/settings.json.
 
